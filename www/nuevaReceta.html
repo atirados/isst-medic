@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/styleIndex.css"> 
+	<link rel="stylesheet" type="text/css" href="styles/styleNuevaReceta.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesMenu.css">
+	<title>RME - Receta Médica Electrónica</title>
+	
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="images/logo.png"></a>
+		<div id="faq">
+			<a href="/">FAQ/Ayuda</a>
+		</div>
+	</header>
+	<div id="container" align="center">
+
+		<!--<div id="menuSuperior" align="center">
+			<table id="menutable">
+				<tr>
+					<td class="tdactivo"><a href="nuevaReceta.html"><p>Nueva Receta</p></a></td>
+					<td><a href="verRecetas.html"><p>Ver Recetas</p></a></td>
+					<td><a href="pacientes.html"><p>Pacientes</p></a></td>
+					<td><a href="medicamentos.html"><p>Medicamentos</p></a></td>
+				</tr>
+			</table>
+		</div>-->
+
+		<div id='cssmenu'>
+			<ul>
+			   <!-- ACTIVO <li class='active'><a href='home.html'><span>Inicio</span></a></li>-->
+			   <li><a href='home.html'><span>Inicio</span></a></li>
+			   <li class='has-sub'><a href='#'><span>Recetas</span></a>
+			      <ul>
+			         <li><a href='nuevaReceta.html'><span>Nueva Receta</span></a></li>
+			         <li class='last'><a href='verRecetas.html'><span>Ver Recetas</span></a></li>
+			      </ul>
+			   </li>
+			   <li><a href='pacientes.html'><span>Pacientes</span></a></li>
+			   <li class='last'><a href='nomenclator.html'><span>Nomenclator</span></a></li>
+			</ul>
+		</div>
+		
+		<div id="titulo" align="center">
+			<hr><h2>Nueva Receta</h2><hr>
+		</div>
+		
+		<div id="form-nuevaReceta">
+			<form name="nuevaReceta" id="nuevaReceta-form" method="post" action="#">
+
+				<input type="text" name="medico" id="medico" placeholder="Médico" tabindex="1" class="txtinput">
+				<input type="text" name="numColegiado" id="numColegiado" placeholder="Número de colegiado" tabindex="2" class="txtinput"><br>
+
+				<input type="text" name="paciente" id="paciente" placeholder="Paciente" tabindex="3" class="txtinput">
+				<input type="text" name="tarjSanitaria" id="tarjSanitaria" placeholder="Tarjeta Sanitaria" tabindex="4" class="txtinput"><br>
+
+				<input type="date" name="fecha" id="fecha" placeholder="Fecha de emisión" tabindex="5" class="txtinput" disabled><br>
+
+				<input type="text" name="medicamento" id="medicamento" placeholder="Medicamento" tabindex="6" class="txtinput">
+				<input type="text" name="abrevMedicamento" id="abrevMedicamento" placeholder="Abrev. medicamento" tabindex="7" class="txtinput"><br>
+
+				<textarea type="text" name="posologia" id="posologia" placeholder="Posología" tabindex="8" class="txtarea"></textarea><br>
+
+				<p>Tipo de receta:
+				<input type="radio" name="tipoReceta" id="simple" val="simple"><label for="cronico">Simple</label>
+				<input type="radio" name="tipoReceta" id="cronico" val="cronico"><label for="cronico">Crónica</label>
+				<input type="radio" name="tipoReceta" id="periodico" val="periodico"><label for="cronico">Periódica</label></p>
+
+				<br>
+				<input type="text" name="alternMedicamento" id="alternMedicamento" placeholder="Alternativas al medicamento" tabindex="9" class="txtinput"><br>
+				<input type="text" name="medico" id="name" placeholder="Médico" tabindex="10" class="txtinput"><br>
+
+	   		</form>
+		</div>
+
+	</div>
+	<footer>
+		<div id="pagefoot" style="width:80%; margin-right: 18%">
+			<p>Ingeniería de Servicios y Sistemas Telemáticos (ISST) - Curso 2013/14 - <a href="creditos.html">Créditos</a></p>
+		</div>
+		<div id="logos">
+			<a id="dit" href="http://www.dit.upm.es"><img src="images/dit_color.png"></a>
+			<a id="etsit" href="http://www.etsit.upm.es"><img src="images/etsit_color.png"></a>
+		</div>
+		
+	</footer>
+
+	<script>
+		var f = new Date();
+		document.getElementById('fecha').value=f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
+	</script>
+</body>
+</html>

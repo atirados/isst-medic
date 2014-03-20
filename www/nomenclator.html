@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/styleIndex.css"> 
+	<link rel="stylesheet" type="text/css" href="styles/styleNuevaReceta.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesMenu.css">
+	<title>RME - Receta Médica Electrónica</title>
+	
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="images/logo.png"></a>
+		<div id="faq">
+			<a href="/">FAQ/Ayuda</a>
+		</div>
+	</header>
+	<div id="container" align="center">
+
+		<!--<div id="menuSuperior" align="center">
+			<table id="menutable">
+				<tr>
+					<td class="tdactivo"><a href="nuevaReceta.html"><p>Nueva Receta</p></a></td>
+					<td><a href="verRecetas.html"><p>Ver Recetas</p></a></td>
+					<td><a href="pacientes.html"><p>Pacientes</p></a></td>
+					<td><a href="medicamentos.html"><p>Medicamentos</p></a></td>
+				</tr>
+			</table>
+		</div>-->
+
+		<div id='cssmenu'>
+			<ul>
+			   <!-- ACTIVO <li class='active'><a href='home.html'><span>Inicio</span></a></li>-->
+			   <li><a href='home.html'><span>Inicio</span></a></li>
+			   <li class='has-sub'><a href='#'><span>Recetas</span></a>
+			      <ul>
+			         <li><a href='nuevaReceta.html'><span>Nueva Receta</span></a></li>
+			         <li class='last'><a href='verRecetas.html'><span>Ver Recetas</span></a></li>
+			      </ul>
+			   </li>
+			   <li><a href='pacientes.html'><span>Pacientes</span></a></li>
+			   <li class='active last'><a href='nomenclator.html'><span>Nomenclator</span></a></li>
+			</ul>
+		</div>
+		
+		<div id="titulo" align="center">
+			<hr><h2>Nomenclator</h2><hr>
+		</div>
+		
+		<div id="nomenclator">
+			<object type="text/html" data="http://www.msssi.gob.es/profesionales/nomenclator.do" width="950" height="600"> </object>
+		</div>
+
+	</div>
+	<footer>
+		<div id="pagefoot" style="width:80%; margin-right: 18%">
+			<p>Ingeniería de Servicios y Sistemas Telemáticos (ISST) - Curso 2013/14 - <a href="creditos.html">Créditos</a></p>
+		</div>
+		<div id="logos">
+			<a id="dit" href="http://www.dit.upm.es"><img src="images/dit_color.png"></a>
+			<a id="etsit" href="http://www.etsit.upm.es"><img src="images/etsit_color.png"></a>
+		</div>
+		
+	</footer>
+
+	<script>
+		var f = new Date();
+		document.getElementById('fecha').value=f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
+	</script>
+</body>
+</html>
