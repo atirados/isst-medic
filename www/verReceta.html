@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ver receta médica</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles/styleIndex.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/styleVerReceta.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesMenu.css">
+
+</head>
+<h1>Receta médica</h1>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div id="faq">
+            <a href="/">FAQ/Ayuda</a>
+        </div>
+    </header>
+    
+    <div id="container" align="center">
+
+    <div id='cssmenu'>
+            <ul>
+               <!-- ACTIVO <li class='active'><a href='home.html'><span>Inicio</span></a></li>-->
+               <li><a href='home.html'><span>Inicio</span></a></li>
+               <li class='active has-sub'><a href='#'><span>Recetas</span></a>
+                  <ul>
+                     <li><a href='nuevaReceta.html'><span>Nueva Receta</span></a></li>
+                     <li class='last'><a href='listaRecetas.html'><span>Ver Recetas</span></a></li>
+                  </ul>
+               </li>
+               <li class='last'><a href='nomenclator.html'><span>Nomenclator</span></a></li>
+            </ul>
+        </div>
+
+    <div id="titulo" align="center">
+            <hr><h2>Ver Receta</h2><hr>
+        </div>
+
+    <div id="form-verReceta">
+   
+
+    <form name="verReceta" id="verReceta-form" method="post" action="#">
+        <input type="text" name="medico" id="medico" placeholder="Felipe González López" tabindex="1" class="txtinput" disabled>
+        <input type="text" name="numColegiado" id="numColegiado" placeholder="93846267" tabindex="2" class="txtinput" disabled><br>
+
+        <input type="text" name="paciente" id="paciente" placeholder="Marina Sánchez García" tabindex="3" class="txtinput" disabled>
+        <input type="text" name="tarjSanitaria" id="tarjSanitaria" placeholder="345345564564" tabindex="4" class="txtinput" disabled><br>
+
+        <input type="date" name="fecha" id="fecha" placeholder="20/02/2014" tabindex="5" class="txtinput" disabled><br>
+
+        <input type="text" name="medicamento" id="medicamento" placeholder="Paracetamol 600mg" tabindex="6" class="txtinput" disabled>
+        <input type="text" name="abrevMedicamento" id="abrevMedicamento" placeholder="DCI" tabindex="7" class="txtinput" disabled><br>
+
+        <textarea type="text" name="posologia" id="posologia" placeholder="Tomar 3 veces al día, cada 8 horas. Se recomienda en las comidas." tabindex="8" class="txtarea" disabled ></textarea><br>
+
+        <p>Tipo de receta:
+        <input type="radio" name="tipoReceta" id="simple" val="simple" disabled checked><label for="cronico">Simple</label>
+        <input type="radio" name="tipoReceta" id="cronico" val="cronico" disabled><label for="cronico">Crónica</label>
+        <input type="radio" name="tipoReceta" id="periodico" val="periodico" disabled><label for="cronico">Periódica</label></p>
+
+        <br>
+        <input type="text" name="alternMedicamento" id="alternMedicamento" placeholder="Ibuprofeno 650mg" tabindex="9" class="txtinput" disabled><br>
+         <input type="text" name="medico" id="name" placeholder="Felipe González López" tabindex="10" class="txtinput" disabled><br>
+
+
+        <!-- Botones -->
+
+        <input id="botonNuevaRecetaAutorrellenada" type="button" class="submitbtn" value="Nueva receta" onClick="" >
+
+        <input id="botonCancelar" type="button"  class="submitbtn" value="Cancelar receta" onClick="">
+
+        <input id="botonImprimir" type="button" class="submitbtn" value="Imprimir" onClick="">
+
+
+    </form>
+    </div>
+    </div>
+
+    <footer>
+        <div id="pagefoot" style="width:80%; margin-right: 18%">
+            <p>Ingeniería de Servicios y Sistemas Telemáticos (ISST) - Curso 2013/14 - <a href="creditos.html">Créditos</a></p>
+        </div>
+        <div id="logos">
+            <a id="dit" href="http://www.dit.upm.es"><img src="images/dit_color.png"></a>
+            <a id="etsit" href="http://www.etsit.upm.es"><img src="images/etsit_color.png"></a>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>

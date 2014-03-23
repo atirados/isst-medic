@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="styles/styleIndex.css"> 
 	<link rel="stylesheet" type="text/css" href="styles/styleHome.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesMenu.css">
 	<title>RME - Receta Médica Electrónica</title>
 </head>
 <body>
@@ -14,17 +15,31 @@
 		</div>
 	</header>
 	<div id="container" align="center">
+
+		<div id='cssmenu'>
+			<ul>
+			   <!-- ACTIVO <li class='active'><a href='home.html'><span>Inicio</span></a></li>-->
+			   <li class='active'><a href='home.html'><span>Inicio</span></a></li>
+			   <li class='has-sub'><a href='#'><span>Recetas</span></a>
+			      <ul>
+			         <li><a href='nuevaReceta.html'><span>Nueva Receta</span></a></li>
+			         <li class='last'><a href='listaRecetas.html'><span>Ver Recetas</span></a></li>
+			      </ul>
+			   </li>
+			   <li class='last'><a href='nomenclator.html'><span>Nomenclator</span></a></li>
+			</ul>
+		</div>
+
+
+
 		<div id="menu">
 			<table id="menutable">
 				<tr>
-					<td><a href="nuevaReceta.html"><h2>Nueva Receta</h2><img src="images/home/nueva.png"/></a></td>
+					
 					<td><a href="loginRecetas.html"><h2>Ver Recetas</h2><img src="images/home/ver.png"/></a></td>
-				</tr>
-				<tr>
-					<td><a href="pacientes.html"><h2>Pacientes</h2><img src="images/home/pacientes.png"/></a></td>
-					<td><a href="medicamentos.html"><h2>Medicamentos</h2><img src="images/home/medicamentos.png"/></a></td>
-				</tr>
-			</table>
+
+					<td><a href="nomenclator.html"><h2>Medicamentos</h2><img src="images/home/medicamentos.png"/></a></td>
+				</tr>			</table>
 		</div>
 	</div>
 	<footer>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="styles/styleIndex.css"> 
 <link rel="stylesheet" type="text/css" href="styles/styleLoginRecetas.css"> 
-
+<link rel="stylesheet" type="text/css" href="styles/stylesMenu.css">
 </head>
 
 <body>
@@ -17,21 +17,33 @@
   
   <div id="container" align="center">
 
+    <div id='cssmenu'>
+      <ul>
+         <!-- ACTIVO <li class='active'><a href='home.html'><span>Inicio</span></a></li>-->
+         <li><a href='home.html'><span>Inicio</span></a></li>
+         <li class='active has-sub'><a href='#'><span>Recetas</span></a>
+            <ul>
+               <li><a href='nuevaReceta.html'><span>Nueva Receta</span></a></li>
+               <li class='last'><a href='listaRecetas.html'><span>Ver Recetas</span></a></li>
+            </ul>
+         </li>
+         <li class='last'><a href='nomenclator.html'><span>Nomenclator</span></a></li>
+      </ul>
+    </div>
+
+
 <hr>
-  <h1>Login usuario</h1>
+  <h1>Datos del paciente</h1>
   <hr>
-   <div id="text_introduction">
-   Datos del usuario <br>
-   </div>
+   
 <div id="form-loginRecetas">
-      <form name="loginRecetas" id="loginRecetas-form" method="post" action="#">
+      <form name="loginRecetas" id="loginRecetas-form" method="post" action="listaRecetas.html">
        
-       <input type="text" placeholder="Paciente"  id="previouslatitude" name=paciente class="txtinput">
+       <input type="text" placeholder="Nombre del paciente"  id="nombrePaciente" name=paciente class="txtinput">
 
        
-       <input type="text" placeholder="Tarjeta Sanitaria"  class="txtinput" id="TSI" name=tsi>
+       <input type="text" placeholder="Nº Tarjeta Sanitaria"  class="txtinput" id="TSI" name=tsi>
 
-       
        <!-- Botones -->
 
        <input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="3" value="Acceder">

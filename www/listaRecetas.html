@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historial de recetas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/styleIndex.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/styleListaRecetas.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesMenu.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div id="faq">
+            <a href="/">FAQ/Ayuda</a>
+        </div>
+    </header>
+
+    <div id="container" align="center">
+
+
+        <div id='cssmenu'>
+            <ul>
+               <!-- ACTIVO <li class='active'><a href='home.html'><span>Inicio</span></a></li>-->
+               <li><a href='home.html'><span>Inicio</span></a></li>
+               <li class='active has-sub'><a href='#'><span>Recetas</span></a>
+                  <ul>
+                     <li><a href='nuevaReceta.html'><span>Nueva Receta</span></a></li>
+                     <li class='last'><a href='listaRecetas.html'><span>Ver Recetas</span></a></li>
+                  </ul>
+               </li>
+               <li class='last'><a href='nomenclator.html'><span>Nomenclator</span></a></li>
+            </ul>
+        </div>
+
+
+    <hr>
+    <h1>Historial de recetas</h1>
+    <hr>
+
+    <div id="menu">
+            <table id="menutable">
+
+                <tr>
+                    <td>Receta ejemplo 1</td>
+                    <td><input type="radio" name="idReceta" id="1" val="1"></td>
+                </tr>
+                <tr>
+                     <td>Receta ejemplo 2</td>
+                    <td><input type="radio" name="idReceta" id="2" val="2"></td>
+                </tr>
+                <tr>
+                     <td>
+
+                        <input id="botonVerReceta" type=button value="Ver Receta" onClick="location.href='verReceta.html' ">
+
+                        <input id="botonNuevaRecetaAutorrellenada" type=button value="Ver y editar" onClick="">
+
+                     </td>
+                </tr>
+            </table>
+        </div>
+
+    <!--
+    <div id="form-listaRecetas">
+
+        
+      <form name="listaRecetas" id="listaRecetas-form" method="post" action="Recetas.html">
+      </form>
+    </div>
+    -->
+
+    <input class="nuevarecetabtn" id="nuevarecetabtn" type="button" value="Nueva receta"
+        onClick="location.href='nuevaReceta.html' ">
+
+    </div>
+
+ <footer>
+    <div id="pagefoot" style="width:80%; margin-right: 18%">
+      <p>Ingeniería de Servicios y Sistemas Telemáticos (ISST) - Curso 2013/14 - <a href="creditos.html">Créditos</a></p>
+    </div>
+    <div id="logos">
+      <a id="dit" href="http://www.dit.upm.es"><img src="images/dit_color.png"></a>
+      <a id="etsit" href="http://www.etsit.upm.es"><img src="images/etsit_color.png"></a>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
